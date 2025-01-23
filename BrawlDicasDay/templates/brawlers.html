@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Brawlers - BrawlDicasDay{% endblock %}
+
+{% block content %}
+    <h2>Lista de Brawlers</h2>
+    <div class="brawler-container">
+        <div class="brawler-card">
+            <img src="{{ url_for('static', filename='images/shelly.png') }}" alt="Shelly">
+            <h3>Shelly</h3>
+            <p>Uma das Brawlers iniciais, ótima para curtas e médias distâncias.</p>
+        </div>
+
+        <div class="brawler-card">
+            <img src="{{ url_for('static', filename='images/colt.png') }}" alt="Colt">
+            <h3>Colt</h3>
+            <p>Dispara rajadas de balas com alta precisão e grande alcance.</p>
+        </div>
+
+        <div class="brawler-card">
+            <img src="{{ url_for('static', filename='images/bull.png') }}" alt="Bull">
+            <h3>Bull</h3>
+            <p>Um tanque poderoso com muito dano de perto.</p>
+        </div>
+    </div>
+{% endblock %}
